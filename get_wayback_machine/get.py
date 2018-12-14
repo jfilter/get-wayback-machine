@@ -1,9 +1,9 @@
 import get_retries
 
 
-def get(url):
+def get(url, **kwargs):
     response = get_retries.get(
-        f"http://archive.org/wayback/available?url={url.split('?')[0]}")
+        f"http://archive.org/wayback/available?url={url.split('?')[0]}", **kwargs)
 
     if not response or response.status_code != 200:
         return None
