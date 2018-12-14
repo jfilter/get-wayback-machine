@@ -17,7 +17,8 @@ def get(url, **kwargs):
     if clo['status'] != '200':
         return None
 
-    response_final = get_retries.get(clo['url'])
+    response_final = get_retries.get(clo['url'], **kwargs)
     if not response_final or response_final.status_code != 200:
         return None
+
     return response_final
