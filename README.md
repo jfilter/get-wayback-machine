@@ -1,14 +1,28 @@
-# Bla
+# get-wayback-machine [![Build Status](https://travis-ci.com/jfilter/get_wayback_machine.svg?branch=master)](https://travis-ci.com/jfilter/get_wayback_machine) [![PyPI](https://img.shields.io/pypi/v/get_wayback_machine.svg)](https://pypi.org/project/get_wayback_machine/) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/get_wayback_machine.svg)](https://pypi.org/project/get_wayback_machine/)
 
-xx
+Fetch a URL via the latest Wayback Machine Snapshot.
+
+## Why?
+
+Occasionally, you have a given URL that it is not online anymore. You may still access it's content via the Internet Archive's [Wayback Machine](https://archive.org/web/).
 
 ## Install
 
-xx
+```bash
+pip install get_wayback_machine
+```
 
 ## Usage
 
-x
+```python
+import get_wayback_machine
+
+response = get_wayback_machine.get('https://en.wikipedia.org')
+if response:
+    print(response.status_code)
+```
+
+The response is either `None` (for fails) or a [Requests](http://docs.python-requests.org/en/master/) response.
 
 ## Related
 
