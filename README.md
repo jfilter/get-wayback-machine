@@ -1,4 +1,4 @@
-# get-wayback-machine [![Build Status](https://travis-ci.com/jfilter/get_wayback_machine.svg?branch=master)](https://travis-ci.com/jfilter/get_wayback_machine) [![PyPI](https://img.shields.io/pypi/v/get_wayback_machine.svg)](https://pypi.org/project/get_wayback_machine/) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/get_wayback_machine.svg)](https://pypi.org/project/get_wayback_machine/)
+# get-wayback-machine [![Build Status](https://travis-ci.com/jfilter/get-wayback-machine.svg?branch=master)](https://travis-ci.com/jfilter/get-wayback-machine) [![PyPI](https://img.shields.io/pypi/v/get-wayback-machine.svg)](https://pypi.org/project/get-wayback-machine/) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/get-wayback-machine.svg)](https://pypi.org/project/get-wayback-machine/)
 
 Fetch a URL via the latest Wayback Machine Snapshot.
 
