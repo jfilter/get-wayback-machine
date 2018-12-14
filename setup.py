@@ -10,7 +10,7 @@ classifiers = [
 ]
 
 setup(name='get_wayback_machine',
-      version='0.1.1',
+      version='0.1.2',
       description="Fetch a URL via the latest Wayback Machine Snapshot",
       long_description=long_description,
       long_description_content_type="text/markdown",
