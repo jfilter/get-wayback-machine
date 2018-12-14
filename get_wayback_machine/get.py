@@ -3,7 +3,7 @@ import get_retries
 
 def get(url, **kwargs):
     response = get_retries.get(
-        f"http://archive.org/wayback/available?url={url.split('?')[0]}", **kwargs)
+        f"http://archive.org/wayback/available?url={url.split('?')[0]}", **{'max_backoff': 128, **kwargs})
 
     if not response or response.status_code != 200:
         return None
@@ -17,7 +17,8 @@ def get(url, **kwargs):
     if clo['status'] != '200':
         return None
 
-    response_final = get_retries.get(clo['url'], **kwargs)
+    response_final = get_retries.get(
+        clo['url'], **{'max_backoff': 128, **kwargs})
     if not response_final or response_final.status_code != 200:
         return None
 
