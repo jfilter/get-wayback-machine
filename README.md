@@ -22,7 +22,7 @@ if response:
     print(response.status_code)
 ```
 
-The response is either `None` (for fails) or a [Requests](http://docs.python-requests.org/en/master/) response.
+The response is either `None` (for fails) or a [Requests](http://docs.python-requests.org/en/master/) response. This module uses [get-retries](https://github.com/jfilter/get-retries) internally to fetch the data.
 
 ## Related
 
